@@ -1,83 +1,68 @@
-# Ollama Prompt Pack — 500+ Production-Ready Prompts
+# Ollama Prompt Pack
 
-## By LocalAIMaster.com
+Prompt libraries and Ollama Modelfiles for coding, writing, analysis, RAG, business, creative work, and expert personas.
 
-Thank you for purchasing the Ollama Prompt Pack! This collection contains 500+ tested prompts organized by use case, formatted as ready-to-use Modelfiles, markdown references, and JSON exports.
+This repo is a public prompt collection for people building with local LLMs. It includes Markdown prompt libraries and ready-to-create Ollama Modelfiles for reusable assistant roles.
 
----
+<p>
+  <img src="https://img.shields.io/badge/Ollama-prompts-000000?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Modelfiles-15-0B8F60?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Prompt%20Libraries-10-2F80ED?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Local%20LLM-ready-B3261E?style=for-the-badge">
+</p>
 
-## Quick Start (2 minutes)
+## Why Star This
 
-### Option 1: Auto-install all Modelfiles
+- Copy/paste prompt libraries organized by use case.
+- 15 Ollama Modelfiles for reusable assistant roles.
+- Useful categories for coding, RAG, data analysis, business, writing, and creative work.
+- One install script to create the bundled Modelfile-based assistants.
+
+## Quick Start
+
 ```bash
+git clone https://github.com/raja24790/ollama-prompt-pack
+cd ollama-prompt-pack
+
+ollama pull llama3.1
 chmod +x scripts/install-all.sh
 ./scripts/install-all.sh
 ```
-This creates all custom models in Ollama. Then just:
+
+Then run:
+
 ```bash
 ollama run python-expert
 ollama run code-reviewer
+ollama run rag-assistant
 ollama run blog-writer
-# etc.
 ```
 
-### Option 2: Use individual prompts
-Browse the `prompts/` folder for markdown files organized by category. Copy any prompt into your Ollama chat or API call.
+## Included Prompt Libraries
 
-### Option 3: Import to Open WebUI
-Import the `prompts/all-prompts.json` file into Open WebUI's prompt library.
+```text
+prompts/
+├── analysis/data-analysis-prompts.md
+├── business/business-prompts.md
+├── coding/debugging-prompts.md
+├── coding/devops-prompts.md
+├── coding/javascript-prompts.md
+├── coding/python-prompts.md
+├── creative/creative-prompts.md
+├── rag/rag-prompts.md
+├── system-personas/expert-personas.md
+└── writing/content-writing-prompts.md
+```
 
----
+## Included Modelfiles
 
-## What's Inside
+`python-expert`, `typescript-expert`, `code-reviewer`, `devops-engineer`, `sql-expert`, `data-analyst`, `rag-assistant`, `security-engineer`, `product-manager`, `blog-writer`, `copywriter`, `teacher`, `fiction-writer`, `sales-expert`, `career-coach`
 
-### Categories (7 folders, 500+ prompts)
+## Search Keywords
 
-| Category | Prompts | Modelfiles | Best For |
-|----------|---------|------------|----------|
-| **Coding** | 100+ | 12 | Python, JS/TS, debugging, code review, SQL, DevOps |
-| **Writing** | 80+ | 8 | Blog posts, emails, marketing copy, documentation |
-| **Analysis** | 70+ | 6 | Data analysis, research, summarization, decision-making |
-| **RAG** | 50+ | 5 | Document Q&A, extraction, knowledge base queries |
-| **System Personas** | 60+ | 15 | Expert personas for every domain |
-| **Creative** | 70+ | 6 | Stories, brainstorming, worldbuilding, dialogue |
-| **Business** | 70+ | 8 | Sales, strategy, customer support, project management |
+`ollama prompts`, `ollama modelfile`, `local llm prompts`, `prompt engineering`, `rag prompts`, `coding prompts`, `system prompts`, `ai persona prompts`, `open webui prompts`
 
-### File Formats
-- `prompts/*.md` — Human-readable prompt collections with examples
-- `modelfiles/` — Ready-to-use Ollama Modelfiles (`ollama create name -f Modelfile`)
-- `prompts/all-prompts.json` — All prompts in JSON (for API use or Open WebUI import)
-- `scripts/install-all.sh` — One-command installer for all Modelfiles
+## Related
 
----
-
-## Recommended Models
-
-These prompts work with any Ollama model. Best results with:
-
-| Task | Recommended Model | Command |
-|------|------------------|---------|
-| Coding | Qwen 2.5 Coder 32B | `ollama pull qwen2.5-coder:32b` |
-| General/Writing | Qwen 2.5 32B | `ollama pull qwen2.5:32b` |
-| Reasoning | DeepSeek R1 14B | `ollama pull deepseek-r1:14b` |
-| Budget (8GB) | Llama 3.1 8B | `ollama pull llama3.1` |
-| Creative | Llama 3.3 70B | `ollama pull llama3.3:70b` |
-
----
-
-## Tips for Best Results
-
-1. **Be specific** — "Review this Python function for bugs" beats "Review this code"
-2. **Chain prompts** — Use the analysis prompts first, then coding prompts for implementation
-3. **Adjust temperature** — Lower (0.1-0.3) for code/analysis, higher (0.7-1.0) for creative
-4. **Use system prompts** — The Modelfiles set expert personas that dramatically improve output
-
----
-
-## Support
-
+- Flagship local AI stacks: https://github.com/raja24790/ollama-docker-templates
 - Website: https://localaimaster.com
-- Email: support@localaimaster.com
-- Free tools: https://localaimaster.com/tools/vram-calculator
-
-*LocalAIMaster.com — Run AI Locally, Own Your Data*
